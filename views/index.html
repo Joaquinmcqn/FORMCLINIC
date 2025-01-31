@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.JS - Webpage</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h2>Agende su hora </h2>
+    <form action="/datos"  action="" method="post" autocomplete="off" id="formulario">
+      <div class="area-medica"  id="area_medic">
+        <h1> Área médica</h1>
+        <div class="option">
+          <input type="radio" name="area"  value="1" checked> Consultas
+        </div>
+        <div class="option">
+          <input type="radio" name="area" value="2"> Dental
+        </div>
+        <div class="option">
+          <input type="radio" name="area" value="3"> Laboratorio
+        </div>
+        <div class="option">
+          <input type="radio" name="area" value="4"> Imágenes
+        </div>
+        <div class="option">
+          <input type="radio" name="area" value="5"> Procedimientos
+        </div>
+        <div class="option">
+          <input type="radio" name="area" value="6"> Vacunatorio
+        </div>
+        <div class="option">
+          <input type="radio" name="area" value="7"> TeleUrgencia
+        </div>
+        <div class="option">
+          <input type="radio" name="area" value="8"> Banco de Sangre
+        </div>
+      </div>
+
+        <svg height="300" width="20" class="lineas">
+          <line x1="1" y1="1" x2="1" y2="1500" style="stroke:black;stroke-width:2" />
+        </svg>
+    
+      <div>
+          <h1> Buscar por</h1>
+          <div>
+            <label for="Buscar_Por">Buscar Por:</label>
+            <select class="Busca" id="selec_busqueda" name="selec_busqueda">
+              <option value="1" id="pro" name="pro">Profesional</option>
+              <option value="2" id="espe" name="espe">Especialidad</option>
+            </select>
+          </div>
+              <label for="opciones"></label>
+              <select class="Busca" id="seleccion" name="Seleccion" onchange="ver_select()" >
+                <option value="">Seleccione una opcion</option>
+              </select>
+          </div>
+      </div>
+
+        <svg height="300" width="20" class="lineas">
+          <line x1="1" y1="1" x2="1" y2="1500" style="stroke:black;stroke-width:2" />
+        </svg>
+
+      <div class="datospacientes"><h1> Datos del Paciente</h1>
+        <div>
+
+      
+          <div><h4>RUT</h4><input type="text" id="rutt" name="rutt" placeholder="Ej:10234124-0"></div>
+          <div><h4>Correo Electronico</h4>
+            <input type="text" id="correo" name="correoC" placeholder="Ej:gvalenzuela@gmail.com"></div>
+            <div> <h4>Seleccion fecha y hora de su cita</h4><input type="datetime-local" id="fecha"     name="Fecha">
+            </div>
+          </div>
+          <div><button class="btn btn-success mt-3">Enviar</button></div>
+       </div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+    </div>
+    <!-- <script>
+        console.log('Sitio Web desde Node.JS')
+    </script> -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

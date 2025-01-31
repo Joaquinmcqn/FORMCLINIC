@@ -1,0 +1,129 @@
+ /* Estilos generales */
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+
+/* Contenedor principal */
+form {
+  display: flex;
+  gap: 40px;
+  background-color: #f5f8f0;
+
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones del formulario */
+.area-medica, #BuscarPor, .datospacientes, div:last-of-type {
+  background: #f5f8f0;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+/* Estilo para los títulos numerados */
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+ 
+  align-items: center;
+}
+
+h1::before {
+  content: "\2780 ";
+  color: #88a84e;
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 7px;
+}
+
+#BuscarPor h1::before {
+  content: "\2781 ";
+}
+
+div:last-of-type h1::before {
+  content: "\2782 ";
+}
+
+/* Opciones con radio buttons */
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  accent-color: #88a84e;
+  cursor: pointer;
+}
+
+/* Campos de entrada y selección */
+input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+#rutt::placeholder, #correo::placeholder {
+  color: #bbb;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Separadores */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  height: 450px;
+}
+
+/* Botón de enviar */
+.btn-success {
+  background-color: #88a84e;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-success:hover {
+  background-color: #6d8c3e;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#BP_S {
+  margin-top: 5px ;
+ 
+}
